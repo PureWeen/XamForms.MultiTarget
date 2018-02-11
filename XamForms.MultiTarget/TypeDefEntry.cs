@@ -46,6 +46,7 @@ namespace XamForms.MultiTarget
             if (Control != null)
             {
                 Control.SetBackgroundColor(global::Android.Graphics.Color.LightGreen);
+                Control.Text = "TypeDefEntryRenderer";
             }
         }
     }

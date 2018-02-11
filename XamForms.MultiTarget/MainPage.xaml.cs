@@ -17,6 +17,7 @@ namespace XamForms.MultiTarget
             control.Children.Add(new TypeDefEntry());
 
             control.Children.Add(new SeperateFoldersEntry());
+            control.Children.Add(new FileExtensionEntry());
             Content = control;
         }
 	}

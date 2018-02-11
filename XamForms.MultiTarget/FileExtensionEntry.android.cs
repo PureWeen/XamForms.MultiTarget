@@ -7,19 +7,20 @@ using Xamarin.Forms.Platform.Android;
 using XamForms.MultiTarget;
 using XamForms.MultiTarget.Platforms.Android;
 
-[assembly: ExportRenderer(typeof(SeperateFoldersEntry), typeof(SeperateFoldersEntryRenderer))]
+[assembly: ExportRenderer(typeof(FileExtensionEntry), typeof(FileExtensionEntryRenderer))]
 namespace XamForms.MultiTarget.Platforms.Android
 {
-    public class SeperateFoldersEntryRenderer : EntryRenderer
+    public class FileExtensionEntryRenderer : EntryRenderer
     {
-        public SeperateFoldersEntryRenderer(Context context) : base(context)
+        public FileExtensionEntryRenderer(Context context) : base(context)
         {
         }
+
         protected override void OnElementChanged(ElementChangedEventArgs<Entry> e)
         {
             base.OnElementChanged(e);
             if (Control != null)
-                Control.Text = "SeperateFoldersEntryRenderer";
+                Control.Text = "FileExtensionEntryRenderer";
         }
     }
 }

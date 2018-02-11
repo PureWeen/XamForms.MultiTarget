@@ -7,6 +7,12 @@
   <ItemGroup>
     <Compile Remove="Platforms\**\*.cs" />
     <None Include="Platforms\**\*.cs" />
+    <Compile Remove="*.android.cs" />
+    <None Include="*.android.cs" />
+    <Compile Remove="*.iOS.cs" />
+    <None Include="*.iOS.cs" />
+    <Compile Remove="*.windows.cs" />
+    <None Include="*.windows.cs" />
   </ItemGroup>
 
   
@@ -28,14 +34,17 @@
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'MonoAndroid80' ">
     <Compile Include="Platforms\android\**\*.cs" />
+    <Compile Include="*.android.cs" />
   </ItemGroup>
   
   <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
     <Compile Include="Platforms\UWP\**\*.cs" />
+    <Compile Include="*.windows.cs" />
   </ItemGroup>
   
   <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' ">
     <Compile Include="Platforms\iOS\**\*.cs" />
+    <Compile Include="*.iOS.cs" />
   </ItemGroup>
   
   <ItemGroup>
